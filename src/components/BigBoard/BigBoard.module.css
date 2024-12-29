@@ -1,0 +1,14 @@
+.wrapper {
+  --gap: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  width: fit-content;
+  margin: 2rem auto;
+}
+
+.row {
+  display: flex;
+  gap: var(--gap);
+}

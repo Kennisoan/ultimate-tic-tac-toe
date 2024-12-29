@@ -1,0 +1,42 @@
+.ksfNma_wrapper {
+  --gap: .2rem;
+  --size: 2rem;
+  --border-width: 1px;
+  --border-radius: .1rem;
+  gap: var(--gap);
+  flex-direction: column;
+  display: flex;
+}
+
+.ksfNma_row {
+  gap: var(--gap);
+  display: flex;
+}
+
+.ksfNma_cell {
+  width: var(--size);
+  height: var(--size);
+  border: var(--border-width) solid black;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  background-color: #0000;
+}
+
+.ksfNma_cell:disabled {
+  border: var(--border-width) solid lightgray;
+}
+
+.hDIpXq_wrapper {
+  --gap: .5rem;
+  gap: var(--gap);
+  flex-direction: column;
+  width: fit-content;
+  margin: 2rem auto;
+  display: flex;
+}
+
+.hDIpXq_row {
+  gap: var(--gap);
+  display: flex;
+}
+/*# sourceMappingURL=index.db9ed22c.css.map */

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Commissioner', serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: 'slnt' 0, 'FLAR' 0, 'VOLM' 0;
 }

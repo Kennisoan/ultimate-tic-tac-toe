@@ -36,6 +36,7 @@
   border: var(--border-width) solid #696969;
   border-radius: var(--border-radius);
   cursor: pointer;
+  transition: all 0.25s ease;
 }
 
 .cell:disabled {
@@ -55,4 +56,17 @@
   justify-content: center;
   font-size: 4rem;
   cursor: not-allowed;
+  animation: winnerOverlayFadeIn 0.75s ease forwards;
+}
+
+@keyframes winnerOverlayFadeIn {
+  0%,
+  25% {
+    opacity: 0;
+    font-size: 3rem;
+  }
+  100% {
+    opacity: 1;
+    font-size: 4rem;
+  }
 }

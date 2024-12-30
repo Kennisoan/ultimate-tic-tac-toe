@@ -25,21 +25,20 @@ function Board({
     nextBoard[index] = activePlayer;
     setBoard(nextBoard);
 
+    // Check for a winner
+    const winner = checkWinner(nextBoard);
+    const nextGameGrid = [...gameGrid];
+    if (winner) {
+      nextGameGrid[boardIndex] = winner;
+      setGameGrid(nextGameGrid);
+    }
+
     // Set active board(s)
-    gameGrid[index] === undefined
+    nextGameGrid[index] === undefined
       ? setActiveBoard(index)
       : setActiveBoard(undefined);
     toggleActivePlayer();
   }
-
-  React.useEffect(() => {
-    const winner = checkWinner(board);
-    if (winner) {
-      const nextGameGrid = [...gameGrid];
-      nextGameGrid[boardIndex] = winner;
-      setGameGrid(nextGameGrid);
-    }
-  }, [board]);
 
   return (
     <div className={styles.wrapper}>

@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"name": "ultimate-tic-tac-toe",
+		"path": "."
+	},
+	{
+		"name": "backend",
+		"path": "backend"
+	},
+	{
+		"name": "frontend",
+		"path": "frontend"
+	}
+],
+  "settings": {}
+}

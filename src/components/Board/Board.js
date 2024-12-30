@@ -11,17 +11,21 @@ function Board({
   setGameGrid,
   activePlayer,
   toggleActivePlayer,
-  incrementTurn,
 }) {
   const [board, setBoard] = React.useState(Array(9).fill(undefined));
   const boardWinner = gameGrid[boardIndex];
 
   function handleMove(index) {
+    if (board[index]) {
+      return;
+    }
+
     // Update the board
     const nextBoard = [...board];
     nextBoard[index] = activePlayer;
     setBoard(nextBoard);
 
+    // Set active board(s)
     gameGrid[index] === undefined
       ? setActiveBoard(index)
       : setActiveBoard(undefined);
